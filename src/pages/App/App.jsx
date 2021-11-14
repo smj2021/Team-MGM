@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import * as reviewsService from '../../services/reviews';
 
+//This should be a working build for Heroku
 
 class App extends Component {
 	constructor() {
