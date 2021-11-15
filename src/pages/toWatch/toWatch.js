@@ -19,7 +19,7 @@ class ToWatch extends Component {
 
     fetchProfile() {
         // it's port 3001 because that's the port our server is listening to
-        fetch('http://localhost:3001/api/to-watch', {
+        fetch('/api/to-watch', {
             headers: {
                 'Authorization': localStorage.getItem('token')
             }

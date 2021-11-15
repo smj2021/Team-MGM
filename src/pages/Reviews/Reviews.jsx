@@ -24,7 +24,7 @@ class Review extends Component {
     }
 
     fetchReviews() {
-        fetch('http://localhost:3001/api/reviews')
+        fetch('/api/reviews')
             .then(res => res.json())
             .then(json => this.setState({
                 reviews: json
@@ -35,7 +35,7 @@ class Review extends Component {
         console.log(this.props)
         e.preventDefault();
         console.log(e.target.querySelector('textarea').value)
-        fetch("http://localhost:3001/api/reviews/animeId", {
+        fetch("/api/reviews/animeId", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

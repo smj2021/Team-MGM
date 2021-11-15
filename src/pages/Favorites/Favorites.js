@@ -19,7 +19,7 @@ class Favorites extends Component {
 
     fetchProfile() {
         // it's port 3001 because that's the port our server is listening to
-        fetch('http://localhost:3001/api/favorites', {
+        fetch('/api/favorites', {
             headers: {
                 'Authorization': localStorage.getItem('token')
             }

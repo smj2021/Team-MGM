@@ -23,7 +23,7 @@ class AnimeDetails extends Component {
         };
 
         // the path is /api/favorites because our server.js has app.use('/api/favorites', favoritesRouter)
-        fetch('http://localhost:3001/api/favorites', {
+        fetch('/api/favorites', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ class AnimeDetails extends Component {
         };
 
         // the path is /api/to-watch because our server.js has app.use('/api/to-watch', toWatchRouter)
-        fetch('http://localhost:3001/api/to-watch', {
+        fetch('/api/to-watch', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
