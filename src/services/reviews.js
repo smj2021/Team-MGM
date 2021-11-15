@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001/api/reviews';
+const BASE_URL = '/api/reviews';
 
 export function deleteOne(id) {
     return fetch(`${BASE_URL}/${id}`, {

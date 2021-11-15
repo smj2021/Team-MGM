@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001/api/favorites'
+const BASE_URL = '/api/favorites'
 
 function deleteOne(id) {
     return fetch(`${BASE_URL}/${id}`, {
